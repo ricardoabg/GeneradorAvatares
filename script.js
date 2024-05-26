@@ -76,7 +76,7 @@ collapsibleButtons.forEach(button => {
 function mostrarPartes (generoSeleccionado) {
     for (let i=1; i<=3; i++) {
         const cuerpo = document.createElement('img')
-        cuerpo.src = '/Elementos/' + generoSeleccionado +'/Cuerpo/Cuerpo (' + i + ')-small.png'
+        cuerpo.src = 'Elementos/' + generoSeleccionado +'/Cuerpo/Cuerpo (' + i + ')-small.png'
         cuerpo.className = "image-option"
         cuerpo.id = `cuerpo-${i}`
         contenedorDeCuerpos.appendChild(cuerpo)
@@ -89,14 +89,14 @@ function mostrarPartes (generoSeleccionado) {
     }
     for (let i=1; i<=cantidad; i++) {
         const cara = document.createElement('img')
-        cara.src = '/Elementos/' + generoSeleccionado +'/Cara/Cara (' + i + ')-small.png'
+        cara.src = 'Elementos/' + generoSeleccionado +'/Cara/Cara (' + i + ')-small.png'
         cara.className = "image-option"
         cara.id = `cara-${i}`
         contenedorDeCaras.appendChild(cara)
     }
     for (let i=1; i<=6; i++) {
         const camisa = document.createElement('img')
-        camisa.src = '/Elementos/' + generoSeleccionado +'/Camisas/Camisa (' + i + ')-small.png'
+        camisa.src = 'Elementos/' + generoSeleccionado +'/Camisas/Camisa (' + i + ')-small.png'
         camisa.className = "image-option"
         camisa.id = `camisa-${i}`
         contenedorDeCamisas.appendChild(camisa)
@@ -229,9 +229,9 @@ function generarAvatarRandom() {
         torso: getRandomNumber(6)
     }
     
-    cuerpo = "/Elementos/" + generoSeleccionado + "/Cuerpo/Cuerpo (" + partesID.cuerpo +").png"
-    cara = "/Elementos/" + generoSeleccionado + "/Cara/Cara (" + partesID.cabeza +").png"
-    camisa = "/Elementos/" + generoSeleccionado + "/Camisas/Camisa (" + partesID.torso +").png"
+    cuerpo = "Elementos/" + generoSeleccionado + "/Cuerpo/Cuerpo (" + partesID.cuerpo +").png"
+    cara = "Elementos/" + generoSeleccionado + "/Cara/Cara (" + partesID.cabeza +").png"
+    camisa = "Elementos/" + generoSeleccionado + "/Camisas/Camisa (" + partesID.torso +").png"
 
     document.getElementById(`cuerpo-${partesID.cuerpo}`).classList.add('selected')
     document.getElementById(`cara-${partesID.cabeza}`).classList.add('selected')
