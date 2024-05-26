@@ -1,0 +1,213 @@
+h1{
+    text-align: center;
+    font-size: 36px;
+    /* margin: auto; */
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #15181F;
+}
+.bg-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 12px;
+    cursor: pointer;
+    /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); */
+}
+.logo{
+    max-width: 100px;
+    /* max-height: 39.36px; */
+    margin-left: 24px;
+    align-self: center;
+ }
+ .top{
+    /* background-color: #000000; */
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    max-width: 1080px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+ }
+.bg-avatar.selected{
+    border: 2px solid orange;
+}
+/* .bg-avatar-1{
+    background-color: #FFB300;
+}.bg-avatar-2{
+    background-color: #4DD0E1;
+}.bg-avatar-3{
+    background-color: #EBB76A;
+}.bg-avatar-4{
+    background-color: #3DCC5D;
+}.bg-avatar-5{
+    background-color: #BB382E;
+}.bg-avatar-6{
+    background-color: #3A89C2;
+}.bg-avatar-7{
+    background-color: #F5F7FA;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}.bg-avatar-8{
+    background-color: #15181F;
+} */
+body {
+    background-color: #E6E8ED;
+}
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.gender-selector {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.gender-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #E6E8ED;
+    border-radius: 20px;
+    color: #4E5561;
+    
+}
+.gender-selector label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.gender-button.active {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #15181F;
+    border-radius: 20px;
+    color: #E6E8ED;
+}
+
+.collapsible {
+    margin-bottom: 12px;
+}
+
+.collapsible-button {
+    width: 100%;
+    /* padding: 10px; */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+    border-top: solid 1px #C0C6D1;
+    padding-top: 12px;
+}
+.collapsible-button.opened svg{
+    transform: rotate(180deg);
+    transition: all 100ms ease;
+}
+
+.collapsible-content {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de scroll */
+    height: 5px; /* Alto de la barra de scroll */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #000000; /* Color del pulgar */
+    border-radius: 5px; /* Redondear las esquinas del pulgar */
+  }
+  ::-webkit-scrollbar-track {
+    background: #f9f9f9; /* Color del área de la barra */
+  }
+.image-option {
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #E6E8ED;
+    border-radius: 8px;  
+}
+
+.image-option.selected {
+    border-color: #FFB300;
+}
+
+canvas {
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: 24px;
+    aspect-ratio: 1;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.Selectores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin: auto;
+    max-width: 1080px;
+}
+.Inputs{
+    background-color: #F5F7FA;
+    border-radius: 16px;
+    /* display: grid; */
+    padding: 24px;
+    
+}
+.Avatar {
+    background-color: #F5F7FA;
+    border-radius: 16px;
+    padding: 64px;
+    
+  }
+.Avatar button{
+    width: 100%;
+    background: #FFB300;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 500;
+    border: 0;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        text-align: center;
+        font-size: 16px;
+        margin: auto;
+        width: 80%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .Selectores{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Avatar{
+        max-width: 150px;
+        margin: auto;
+        padding: 24px;
+
+    }
+    .avatarSection{
+        position: sticky;
+        top: 8px;
+        padding-bottom: 12px;
+    }
+
+}

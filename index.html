@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+    <img src="Elementos/logo.png" class="logo">
+    <h1>¡Bienvenido Explorador,<br>genera tu avatar!</h1>
+    </div>
+    <div class="Selectores">
+        <div class="Inputs">    
+            <div class="gender-selector">
+                <label>Seleccionar genero</label>
+                <div>
+                <button id="masculino" class="gender-button">Masculino</button>
+                <button id="femenino" class="gender-button">Femenino</button>
+                </div>
+            </div>
+            <div class="collapsible">
+                <button class="collapsible-button opened">Cuerpo <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#4E5561"/>
+                    </svg>
+                    </button>
+                <div class="collapsible-content" id="cuerpos">
+                </div>
+            </div>
+            <div class="collapsible">    
+                <button class="collapsible-button opened">Cabeza <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#4E5561"/>
+                    </svg></button>
+                <div class="collapsible-content" id="cabezas">   
+                </div>    
+            </div>
+            <div class="collapsible">    
+                <button class="collapsible-button opened">Torso <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#4E5561"/>
+                    </svg></button>
+                <div class="collapsible-content" id="camisas">   
+                </div>    
+            </div>
+            <div class="collapsible">    
+                <button class="collapsible-button opened">Color de fondo <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#4E5561"/>
+                    </svg></button>
+                <div class="collapsible-content" id="color">
+                    <!-- <div class="bg-avatar bg-avatar-1" data-color="#FFB300"></div>  
+                    <div class="bg-avatar bg-avatar-2" data-color="#4DD0E1"></div>  
+                    <div class="bg-avatar bg-avatar-3" data-color="#EBB76A"></div>  
+                    <div class="bg-avatar bg-avatar-4" data-color="#3DCC5D"></div> 
+                    <div class="bg-avatar bg-avatar-5" data-color="#BB382E"></div>
+                    <div class="bg-avatar bg-avatar-6" data-color="#3A89C2"></div>
+                    <div class="bg-avatar bg-avatar-7" data-color="#F5F7FA"></div>  
+                    <div class="bg-avatar bg-avatar-8" data-color="#15181F"></div>   -->
+                </div>    
+            </div>
+        </div>
+        <div class="avatarSection">
+        <div Class ="Avatar">
+            <canvas id="avatar">
+            </canvas>
+            <button id="boton-descargar">Descargar avatar</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
